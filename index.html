@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LSPD — Strona główna</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background-color:#0b0f14;
+      color:#e6eef6;
+    }
+
+    header {
+      background:#10151d;
+      padding:15px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      color:#aab4c2;
+      text-decoration:none;
+      margin-left:20px;
+      transition:color 0.2s;
+    }
+    nav a:hover { color:#0b84ff; }
+
+    /* HERO */
+    .hero {
+      text-align:center;
+      padding:80px 20px 60px;
+    }
+    .hero img {
+      width:220px;
+      height:auto;
+      margin-bottom:25px;
+    }
+    .hero h1 {
+      color:#0b84ff;
+      font-size:40px;
+      margin-bottom:10px;
+    }
+    .hero p {
+      color:#b8c2d0;
+      font-size:18px;
+      max-width:600px;
+      margin:0 auto;
+    }
+    .btn {
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 24px;
+      border-radius:8px;
+      background:linear-gradient(90deg,#0b84ff,#0a6ae6);
+      color:white;
+      font-weight:600;
+      text-decoration:none;
+      transition:opacity .2s;
+    }
+    .btn:hover { opacity:0.8; }
+
+    /* INFO */
+    .info {
+      background:#121922;
+      padding:60px 20px;
+      text-align:center;
+    }
+    .info h2 {
+      color:#0b84ff;
+      font-size:28px;
+      margin-bottom:15px;
+    }
+    .info p {
+      color:#b8c2d0;
+      font-size:17px;
+      max-width:700px;
+      margin:0 auto 10px;
+      line-height:1.6;
+    }
+
+    /* HIERARCHIA */
+    .hierarchia {
+      background:#10151d;
+      padding:60px 20px;
+      text-align:center;
+    }
+    .hierarchia h2 {
+      color:#0b84ff;
+      font-size:30px;
+      margin-bottom:30px;
+    }
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      max-width:900px;
+      margin:0 auto;
+    }
+    .card {
+      background:#0e141d;
+      padding:20px;
+      border-radius:10px;
+      border-left:4px solid #0b84ff;
+      box-shadow:0 2px 8px rgba(0,0,0,0.3);
+      transition:transform .2s;
+    }
+    .card:hover { transform:translateY(-5px); }
+    .card img {
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:15px;
+      border:2px solid #0b84ff;
+    }
+    .card h3 { color:#fff; margin-bottom:5px; }
+    .card p { color:#b8c2d0; font-size:15px; }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      color:#6c7480;
+      font-size:14px;
+      border-top:1px solid rgba(255,255,255,0.05);
+      margin-top:60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="image-removebg-preview (1).png"><strong>Los Santos Police Department</strong></div>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="regulamin.html">Regulamin</a>
+      <a href="nabor.html">Nabór</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="jednostki.html">Jednostki Wewnętrzne</a>
+      <a href="pochwala.html">Złóż pochwałę na Pracownika</a>
+      <a href="skarga.html">Złóż skargę na Pracownika</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="image-removebg-preview (1).png" alt="Logo LSPD">
+    <h1>Los Santos Police Department</h1>
+    <p>
+      Witamy na oficjalnej stronie LSPD.  
+      Z dumą służymy społeczności, stojąc na straży prawa i porządku.
+    </p>
+    <a href="nabor.html" class="btn">Dołącz do nas</a>
+  </section>
+
+  <!-- NAJWAŻNIEJSZE INFORMACJE -->
+  <section class="info">
+    <h2>Najważniejsze Informacje</h2>
+    <p>Los Santos Police Department to jedna z głównych jednostek porządkowych w mieście. 
+    Naszym celem jest zapewnienie bezpieczeństwa wszystkim mieszkańcom Los Santos oraz utrzymanie porządku publicznego.</p>
+    <p>Działamy zgodnie z zasadami RolePlay, profesjonalizmem i współpracą między służbami. 
+    Każdy funkcjonariusz jest szkolony, by sprostać najwyższym standardom służby.</p>
+  </section>
+
+  <!-- HIERARCHIA -->
+  <section class="hierarchia">
+    <h2>Hierarchia — High Command</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="7ab4e507-6e00-496d-9b3c-941447153baf.png" alt="Zdjęcie profilowe">
+        <h3>Ivan Fuentes</h3>
+        <p>Chief of Police</p>
+      </div>
+      <div class="card">
+        <img src="7ab4e507-6e00-496d-9b3c-941447153baf.png" alt="Zdjęcie profilowe">
+        <h3>Ryan Anderson</h3>
+        <p>Assistant Chief of Police</p>
+      </div>
+      <div class="card">
+        <img src="7ab4e507-6e00-496d-9b3c-941447153baf.png" alt="Zdjęcie profilowe">
+        <h3>Ivan Makia</h3>
+        <p>Deputy Chief of Police</p>
+      </div>
+      <div class="card">
+        <img src="7ab4e507-6e00-496d-9b3c-941447153baf.png" alt="Zdjęcie profilowe">
+        <h3>Jacob Black</h3>
+        <p>Commander</p>
+      </div>
+      <div class="card">
+        <img src="7ab4e507-6e00-496d-9b3c-941447153baf.png" alt="Zdjęcie profilowe">
+        <h3>Pablo Huares</h3>
+        <p>Deputy Commander</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 LSPD (By _sopel_. , anmtnke)
+  </footer>
+</body>
+</html>
